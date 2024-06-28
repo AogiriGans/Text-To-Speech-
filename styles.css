@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.animated-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffea, 0 0 30px #00ffea, 0 0 40px #00ffea, 0 0 50px #00ffea, 0 0 60px #00ffea, 0 0 70px #00ffea, 0 0 80px #00ffea;
+    }
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #2e2e2e;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#download-link {
+    display: none;
+    margin-top: 10px;
+    color: #00ffea;
+    text-decoration: none;
+}
+
+#download-link:hover {
+    text-decoration: underline;
+}
